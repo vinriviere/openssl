@@ -15,7 +15,7 @@
  * Will always succeed on djgpp, since its libc does not have complex.h.
  */
 
-#if !defined(__DJGPP__)
+#if !defined(__DJGPP__) && !defined(__MINT__)
 # if defined(__STDC_VERSION__)
 #  if __STDC_VERSION__ >= 199901L
 #   include <complex.h>
